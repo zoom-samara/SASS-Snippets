@@ -1,9 +1,6 @@
 <snippet>
-	<content><![CDATA[display: inline-block;
-vertical-align: top;
-${1:zoom: 1;${2: /* Fix for IE7 */}
-*display: inline;${2: /* Fix for IE7 */}}$3]]></content>
+	<content><![CDATA[display: inline-block]]></content>
 	<tabTrigger>inl</tabTrigger>
-    <description>CSS - display: inline-block;</description>
-    <scope>source.css, source.less, source.scss, source.stylus</scope>
+    <description>CSS - display: inline-block</description>
+    <scope>source.sass</scope>
 </snippet>

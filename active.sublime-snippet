@@ -4,5 +4,5 @@
 }]]></content>
 	<tabTrigger>act</tabTrigger>
     <description>CSS - :active</description>
-    <scope>source.css, source.less, source.scss, source.stylus</scope>
+    <scope>source.sass</scope>
 </snippet>
