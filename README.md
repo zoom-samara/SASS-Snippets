@@ -39,10 +39,9 @@ $1:active {
 __aft__
 
 ```CSS
-$1:after {
+$1:after
     content: ''
     $2
-}
 ```
 
 __amp__
@@ -50,11 +49,10 @@ __amp__
 Wrap ampersand with <span class="amp"></span> to make them look sexy.
 
 ```CSS
-.amp {
+.amp
     font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif
     font-style: italic
     font-weight: normal
-}
 ```
 
 __ani__
@@ -63,11 +61,7 @@ Animation shorthand: animation-name animation-duration animation-timing-function
 animation-iteration-count animation-direction.
 
 ```CSS
--webkit-animation: ${1:name} ${2:duration} ${3:ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>)} ${4:delay} ${5:infinite|<number>} ${6:normal|alternate}
-   -moz-animation: ${1:name} ${2:duration} ${3:ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>)} ${4:delay} ${5:infinite|<number>} ${6:normal|alternate}
-    -ms-animation: ${1:name} ${2:duration} ${3:ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>)} ${4:delay} ${5:infinite|<number>} ${6:normal|alternate}
-     -o-animation: ${1:name} ${2:duration} ${3:ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>)} ${4:delay} ${5:infinite|<number>} ${6:normal|alternate}
-        animation: ${1:name} ${2:duration} ${3:ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>)} ${4:delay} ${5:infinite|<number>} ${6:normal|alternate}
+animation: ${1:name} ${2:duration} ${3:ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>)} ${4:delay} ${5:infinite|<number>} ${6:normal|alternate}
 ```
 
 __aut__
@@ -85,10 +79,9 @@ background: ${1:#fff} url('$2') ${3:0} ${4:0} ${5:repeat|repeat-x|repeat-y|no-re
 __bef__
 
 ```CSS
-$1:before {
+$1:before
     content: ''
     $2
-}
 ```
 
 __blo__
@@ -118,9 +111,7 @@ bottom: ${1:0}
 __box__
 
 ```CSS
--webkit-box-sizing: border-box
-   -moz-box-sizing: border-box
-        box-sizing: border-box
+box-sizing: border-box
 ```
 
 __cen__
@@ -135,16 +126,13 @@ You should look at using inline-block for layouts instead of floats.
 
 ```CSS
 .cf:after,
-.cf:before {
+.cf:before
     content: ''
     display: table
-}
-.cf:after {
+.cf:after
     clear: both
-}
-.cf {
+.cf
     zoom: 1
-}
 ```
 
 __con__
@@ -162,11 +150,7 @@ cursor: ${1:auto|crosshair|default|pointer|move|e-resize|ne-resize|-resize|n-res
 __fil__
 
 ```CSS
--webkit-animation-fill-mode: ${1:none|forwards|backwards|both}
-   -moz-animation-fill-mode: ${1:none|forwards|backwards|both}
-    -ms-animation-fill-mode: ${1:none|forwards|backwards|both}
-     -o-animation-fill-mode: ${1:none|forwards|backwards|both}
-        animation-fill-mode: ${1:none|forwards|backwards|both}
+animation-fill-mode: ${1:none|forwards|backwards|both}
 ```
 
 __fix__
@@ -189,11 +173,7 @@ It's a good idea to define a background color, and use alpha transparency with y
 way you only need to alter a single value if you want to change the color of the background.
 
 ```CSS
-background-image: -webkit-linear-gradient($1)
-background-image:    -moz-linear-gradient($1)
-background-image:     -ms-linear-gradient($1)
-background-image:      -o-linear-gradient($1)
-background-image:         linear-gradient($1)
+background-image: linear-gradient($1)
 ```
 
 __hid__
@@ -209,9 +189,8 @@ when defining styles for anchors, there is no need for :focus in most other case
 
 ```CSS
 $1:hover,
-$1:focus {
+$1:focus
     $2
-}
 ```
 
 __h__
@@ -226,10 +205,7 @@ hsla(${1:0},${2:0}%,${3:0}%,${4:1})
 __hyp__
 
 ```CSS
--webkit-hyphens: auto
-   -moz-hyphens: auto
-    -ms-hyphens: auto
-        hyphens: auto
+hyphens: auto
 ```
 
 __inl__
@@ -239,9 +215,6 @@ Comment out the whitespace between elements in your markup if you need pixel per
 
 ```CSS
 display: inline-block
-vertical-align: top
-${1:zoom: 1${2: /* Fix for IE7 */}
-*display: inline${2: /* Fix for IE7 */}}
 ```
 
 __ita__
@@ -258,26 +231,9 @@ four times, and then use the arrow keys to navigate. Continuing to tab will redu
 down to a single selection, but you can also force it using ESC.
 
 ```CSS
-@-webkit-keyframes $1 {
+@keyframes $1
     0% { $2 }
     100% { $3 }
-}
-@-moz-keyframes $1 {
-    0% { $2 }
-    100% { $3 }
-}
-@-ms-keyframes $1 {
-    0% { $2 }
-    100% { $3 }
-}
-@-o-keyframes $1 {
-    0% { $2 }
-    100% { $3 }
-}
-@keyframes $1 {
-    0% { $2 }
-    100% { $3 }
-}
 ```
 
 __lef__
@@ -304,9 +260,8 @@ When designing with a focus on responsiveness, using min-width is recommended (i
 devices, such as mobiles, aren't applying styles that aren't being used).
 
 ```CSS
-@media (min-width: $1) {
+@media (min-width: $1)
     $2
-}
 ```
 
 __non__
@@ -324,11 +279,7 @@ padding: ${1:0}
 __pla__
 
 ```CSS
--webkit-animation-play-state: ${1:running|paused}
-   -moz-animation-play-state: ${1:running|paused}
-    -ms-animation-play-state: ${1:running|paused}
-     -o-animation-play-state: ${1:running|paused}
-        animation-play-state: ${1:running|paused}
+animation-play-state: ${1:running|paused}
 ```
 
 __r__
@@ -380,8 +331,7 @@ __tap__
 This overrides the highlight color on iPhones/iPads.
 
 ```CSS
--webkit-tap-highlight-color: ${1:hsla(0,0%,0%,.5)}
-        tap-highlight-color: ${1:hsla(0,0%,0%,.5)}
+tap-highlight-color: ${1:hsla(0,0%,0%,.5)}
 ```
 
 __tex__
@@ -403,11 +353,7 @@ __transform__
 This is too complex to write out all options.
 
 ```CSS
--webkit-transform: $1
-   -moz-transform: $1
-    -ms-transform: $1
-     -o-transform: $1
-        transform: $1
+transform: $1
 ```
 
 __transition__
@@ -418,11 +364,7 @@ transition to all properties, using the ease timing-function, you only need to d
 (e.g. transition: .5s).
 
 ```CSS
--webkit-transition: ${1:all} ${2:.25s} ${3:ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>)}
-   -moz-transition: ${1:all} ${2:.25s} ${3:ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>)}
-    -ms-transition: ${1:all} ${2:.25s} ${3:ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>)}
-     -o-transition: ${1:all} ${2:.25s} ${3:ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>)}
-        transition: ${1:all} ${2:.25s} ${3:ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>)}
+transition: ${1:all} ${2:.25s} ${3:ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>)}
 ```
 
 __upp__
