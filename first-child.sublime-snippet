@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[$1:first-child {
+	$2
+}]]></content>
+	<tabTrigger>fir</tabTrigger>
+    <description>CSS - :first-child</description>
+    <scope>source.sass</scope>
+</snippet>
