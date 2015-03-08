@@ -153,6 +153,13 @@ __fil__
 animation-fill-mode: ${1:none|forwards|backwards|both}
 ```
 
+__fir__
+
+```CSS
+$1:first-child
+    $2
+```
+
 __fix__
 
 ```CSS
