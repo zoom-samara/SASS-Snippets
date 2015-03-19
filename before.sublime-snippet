@@ -1,8 +1,8 @@
 <snippet>
-	<content><![CDATA[$1:before {
+	<content><![CDATA[$1:before
 	content: ''
 	$2
-}]]></content>
+]]></content>
 	<tabTrigger>bef</tabTrigger>
     <description>CSS - :before</description>
     <scope>source.sass</scope>
