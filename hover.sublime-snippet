@@ -1,8 +1,8 @@
 <snippet>
 	<content><![CDATA[$1:hover,
-$1:focus {
+$1:focus
 	$2
-}]]></content>
+]]></content>
 	<tabTrigger>hov</tabTrigger>
     <description>CSS - :hover, :focus</description>
     <scope>source.sass</scope>
