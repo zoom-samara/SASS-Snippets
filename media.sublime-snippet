@@ -1,7 +1,7 @@
 <snippet>
-	<content><![CDATA[@media (min-width: $1) {
+	<content><![CDATA[@media (min-width: $1)
 	$2
-}]]></content>
+]]></content>
 	<tabTrigger>med</tabTrigger>
     <description>CSS - @media {}</description>
     <scope>source.sass</scope>
